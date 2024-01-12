@@ -1,0 +1,5 @@
+FROM nvcr.io/nvidia/pytorch:23.12-py3
+LABEL maintainer="soulteary@gmail.com"
+
+RUN pip install transformers==4.36.2 gradio==4.14.0 diffusers==0.25.0 accelerate==0.26.1
+WORKDIR /app
